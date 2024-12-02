@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketPoint - Comprar Ingressos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="menu.js"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="img/img/tp 1.png" alt="Logo">
+            </a>
+            <button class="menu-icon" aria-label="Abrir Menu" onclick="Topmenu()">
+                ☰
+            </button>
+            <nav class="menu" id="Topmenu">
+                <a href="#">CINEMAS</a>
+                <p>/</p>
+                <a href="#">CIDADES</a>
+                <p>/</p>
+                <a href="#">CONTATO</a>
+                <p>/</p>
+                <a href="#">MINHA CONTA</a>
+                <a href="javascript:void(0);" class="icon" onclick="Topmenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+            </nav>
+            
+            <div class="search-icon">
+                <input type="text" placeholder="Pesquisar">
+                <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
+                    <path d="M16.9281 17.658L23 24M19.5 11.1667C19.5 16.2292 15.5824 20.3333 10.75 20.3333C5.9175 20.3333 2 16.2292 2 11.1667C2 6.10405 5.9175 2 10.75 2C15.5824 2 19.5 6.10405 19.5 11.1667Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <section class="banner">
+        <div class="slidehow">
+        <img class="mySlides" src="img/img/header.png" style="width:100%" >
+        <img class="mySlides" src="img/img/header (2).png" style="width:100%">
+        <img class="mySlides" src="img/img/header (3).png" style="width:100%">
+    </div>
+    </section>
+    
+
+    <main>
+        <section class="movie-list">
+            <h2>PRÉ-VENDA</h2>
+            <div class="movies">
+                <div class="movie">
+                    <img src="img/img/image.png" alt="Moana">
+                    <a href=""><h3>Moana 2</h3></a>
+                    <p>ESTREIA DIA 28.11.24</p>
+                </div>
+                <div class="movie">
+                    <img src="img/img/image (1).png" alt="Avatar">
+                   <a href="#"><h3>Mufasa - O Rei Leão</h3></a>
+                   <P>ESTREIA DIA 19.12.24</P>
+                </div>
+                <div class="movie">
+                    <img src="img/img/image (2).png" alt="Vingadores">
+                    <a href=""><h3>Kraven - O Caçador</h3></a>
+                    <p>ESTREIA DIA 12.12.24</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="ingressos2" class="tickets2">
+        <h2>Programação</h2>
+        <div class="menuTabs2">
+            <a href="#" class="arrow2"><img src="img/img/arrow-right-circle-svgrepo-com (1) 2.png" alt="Arrow Left"></a>
+            <div class="moreMovies">
+                <img src="img/img/image (3).png" alt="Wicked">
+                <a href="#"><h3>Wicked</h3></a>
+            </div>
+            <div class="moreMovies">
+                <img src="img/img/image (4).png" alt="Ainda Estou Aqui">
+                <a href="#"><h3>Ainda Estou Aqui</h3></a>
+            </div>
+            <div>
+                <img src="img/img/image (5).png" alt="Sorria 2">
+                <a href="#"><h3>Sorria 2</h3></a>
+            </div>
+            <div>
+                <img src="img/img/image (6).png" alt="Todo Tempo Que Temos">
+                <a href="#"><h3>Todo Tempo Que Temos</h3></a>
+            </div>
+            <a href="#" class="arrow2"><img src="img/img/arrow-right-circle-svgrepo-com (1) 3.png" alt="Arrow Right"></a>
+        </div>
+
+        <div class="container">
+            <h2>BUSCAR SESSÕES</h2>
+            <div class="form">
+                <div class="form-group">
+                    <label for="date">DIA</label>
+                    <input type="text" id="date" placeholder="DD/MM/AAAA">
+                </div>
+                <div class="form-group">
+                    <label for="movie">FILME</label>
+                    <select id="movie">
+                        <option value="" disabled selected>Selecionar...</option>
+                        <option value="filme1">Filme 1</option>
+                        <option value="filme2">Filme 2</option>
+                        <option value="filme3">Filme 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="city">CIDADE</label>
+                    <select id="city">
+                        <option value="" disabled selected>Selecionar...</option>
+                        <option value="salvador">Salvador</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rio">Rio de Janeiro</option>
+                    </select>
+                </div>
+                <button id="searchButton">BUSCAR</button>
+            </div>
+        </div>
+        
+          
+          <div class="store">
+            <h2>LOJA</h2>
+            <div class="categories">
+              <div class="category">
+                <img src="img/img/snacks 1.png" alt="Snacks">
+                <p>SNACKS</p>
+              </div>
+              <div class="category">
+                <img src="img/img/combos 1.png" alt="Combos">
+                <p>COMBOS</p>
+              </div>
+              <div class="category">
+                <img src="img/img/promo 1.png" alt="Promoções">
+                <p>PROMOÇÕES</p>
+              </div>
+            </div>
+            <div class="cta">
+              <p>PARA UMA MELHOR EXPERIÊNCIA</p>
+              <button id="registerButton">CADASTRE-SE</button>
+            </div>
+          </div>
+        </body>
+        <!-- Modal de Cadastro -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Cadastro</h2>
+        <form id="registerForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <p>© 2024 TicketPoint. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="slidehow.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
